@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      My Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content>
+    <form #form="ngForm" (submit)="login(form);" >
+       <div>
+         <ion-item>
+           <ion-label> Fill Details  </ion-label>
+         </ion-item>
+         <br>
+
+         <ion-item>
+           <ion-label>
+             <ion-icon  size="large" name="mail"></ion-icon>
+           </ion-label>
+           <ion-input clearInput  placeholder="Email" type="email"  name="email" ngModel ></ion-input>
+         </ion-item>
+
+         <ion-item>
+           <ion-label>
+             <ion-icon  size="large" name="key"></ion-icon>
+           </ion-label>
+           <ion-input clearInput  placeholder="Password" type="password"  name="password"  ngModel  ></ion-input>
+         </ion-item>
+         <br>
+
+         <ion-item>
+          <ion-button  type="submit" color="dark" shape="round" fill="solid" (click)="login(form)">Log In</ion-button>
+        </ion-item>
+    
+       </div>
+
+    </form>
+
+
+    <ion-item>
+      <ion-button  color="dark" shape="round"  (click)="createaccount()"> Create Account </ion-button>
+     </ion-item>
+
+</ion-content>

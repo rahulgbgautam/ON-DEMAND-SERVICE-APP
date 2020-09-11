@@ -1,0 +1,7 @@
+{
+  "name": "ondemandservice",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
